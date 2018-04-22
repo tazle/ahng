@@ -11,7 +11,7 @@ function nextWednesday(now) {
 
 function nextSaturday(now) {
     const result = now.clone();
-    while (result.isoWeekday() !== 3) {
+    while (result.isoWeekday() !== 6) {
         result.add(1, 'days');
     }
     return result;
